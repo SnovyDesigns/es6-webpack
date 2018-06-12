@@ -7,13 +7,27 @@
     <title>Timer</title>
 </head>
 <body>
-    <div class="stopwatch"></div>
-    <nav class="controls">
-        <a href="#" class="button" id="start">Start</a>
-        <a href="#" class="button" id="stop">Stop</a>
-        <a href="#" class="button" id="reset">Reset</a>
-    </nav>
-    <ul class="results">
-    </ul>
+    <div class="container">
+        <div class="row justify-content-center mt-2 mb-3">
+            <div class="stopwatch col-3 text-center"></div>
+        </div>
+        <div class="row justify-content-center mb-5">
+                <div class="col-5">
+                    <div class="row justify-content-around">
+                        <button type="button" class="btn btn-success" id="start">Start</button>
+                        <button type="button" class="btn btn-warning" id="stop">Stop</button>
+                        <button type="button" class="btn btn-danger" id="reset">Reset</button>
+                        <button type="button" class="btn btn-info" id="add">Dodaj do wyników</button>
+                    </div>
+                </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="table col-6 text-center">
+                <h3 class="mb-3">Tabela wyników<br><small>Tabela przechowuje ostatnie 10 dodanych wyników</small></h3>
+                <ul class="results list-group"></ul>
+                <button type="button" id="clear" class="btn btn-dark mt-3 mb-3">Wyczyść listę</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
