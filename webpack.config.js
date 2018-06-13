@@ -6,7 +6,7 @@ const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const devMode = process.env.NODE_ENV !== 'production'; // eslint-disable-line
 
 module.exports = {
-    entry: path.resolve(__dirname, 'src') + '/js/main.js', // eslint-disable-line
+    entry: path.resolve(__dirname, 'src') + '/app/main.jsx', // eslint-disable-line
     output: {
         path: path.resolve(__dirname, 'dist'), // eslint-disable-line
         filename: 'bundle.js'
